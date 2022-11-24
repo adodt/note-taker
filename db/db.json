@@ -1,6 +1,14 @@
-[
-    {
-        "title":"Test Title",
-        "text":"Test text"
-    }
-]
+{
+    "notes": [
+        {
+            "title": "Finish HW",
+            "text": "Module 11 & 14",
+            "id": "0"
+        },
+        {
+            "title": "Grocery Shopping",
+            "text": "Avocado, dog food, bagels",
+            "id": "1"
+        }
+    ]
+}
