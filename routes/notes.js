@@ -3,7 +3,7 @@ const {
     readFromFile,
     readAndAppend,
     readAndDelete,
-} = require("../helpers/uuid");
+} = require("../helpers/fsUtils");
 const uuid = require("../helpers/uuid");
 
 notes.get('/', (req, res) => {
