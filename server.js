@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = process.env.PORT || 3001;
+const api = require('./routes/index')
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));

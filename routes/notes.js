@@ -32,18 +32,14 @@ notes.post("/", (req, res) => {
 });
 
 //DELETE note
-app.delete('api/notes/:id', (req, res) => {
+notes.delete('/:id', (req, res) => {
     const id = req.params.id;
-    let note;
-
-    notes.map((element, index) => {
-        if (element.id == id) {
-            note = element
-            notes.splice(index, 1)
-            return res.json(note);
-        }
-
+    if(id) {
+        readAndDelete(id, './db/db.json')
+        res.json('Deleted!')
+    } else {
+        res.json('Error! Couuld not delete note.')
+    }
     });
-});
 
 module.exports = notes;
